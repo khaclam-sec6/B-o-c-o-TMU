@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+      <div class="text-box" onclick="showMenu()"></div>
+      <h1>Thông tin liên hệ</h1>
+    </section>
+
+    <!---------- contact us ---------->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.775970839279!2d105.77236977448116!3d21.03655138751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b6163c392f%3A0x1ebf64facbb56d03!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaMawxqFuZyBt4bqhaQ!5e1!3m2!1svi!2s!4v1791305721336!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>79 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</h5>
+              <p>Trường Đại học Thương mại</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>(024) 3764 3219</h5>
+              <p>
+                Thứ Hai - Thứ Sáu, 8:00 - 17:00 (Tư vấn tuyển sinh & hỗ trợ)
+              </p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>mail@tmu.edu.vn</h5>
+              <p>Gửi thắc mắc của bạn cho chúng tôi</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col" method="post">
+          <form action="form-handler.php">
+            <input
+              type="text"
+              name="name"
+              placeholder="Họ và tên của bạn"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Địa chỉ email"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Vấn đề cần tư vấn"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Nội dung tin nhắn / Thắc mắc của bạn"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Gửi tin nhắn</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- Footer ------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Trường Đại học Thương mại là trường đại học công lập đa ngành, hàng đầu
+        tại Việt Nam trong các lĩnh vực Kinh tế,<br />Quản trị kinh doanh,
+        Marketing, Kế toán - Kiểm toán,Tài chính - Ngân hàng và Thương mại điện
+        tử.<br />
+        Trường cam kết cung cấp môi trường giáo dục chất lượng cao, hiện đại và
+        hội nhập quốc tế.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Designed with <i class="fa fa-heart-o"></i> by TMUers | Mãi yêu TMU</p>
+    </section>
+
+    <!-- FontAwesome v4 CDN - liên kết với web icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!----------JavaScript for Toggle Menu---------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
